@@ -34,7 +34,7 @@ public class OptikCevapAnahtariOku {
     public static void main(String[] args) {
 
         // Ogrenci optik cevaplar..
-        char[][] answers = {
+        char[][] studentOptik = {
                 {'A', 'B', 'A', 'C', 'C', 'D', 'E', 'E', 'A', 'D'},
                 {'D', 'B', 'A', 'B', 'C', 'A', 'E', 'E', 'A', 'D'},
                 {'E', 'D', 'D', 'A', 'C', 'B', 'E', 'E', 'A', 'D'},
@@ -47,11 +47,11 @@ public class OptikCevapAnahtariOku {
         char[] keys = {'D', 'B', 'D', 'C', 'C', 'D', 'A', 'E', 'A', 'D'};  // Optik Dogru cevap anahtari
 
         int counter = 0;
-        for (int i = 0; i < answers.length; i++) {
+        for (int i = 0; i < studentOptik.length; i++) {
 
             for (int n = 0; n < keys.length; n++) {
 
-                if (keys[n] == answers[i][n]) {
+                if (keys[n] == studentOptik[i][n]) {
                     counter++;
                 }
             }
